@@ -1,3 +1,81 @@
+/*variables*/
+
+/* reset*/
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
 *{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}  
+
+/*base styles*/
+
+header{
+    min-width: 20px;
+}
+
+header #logo{
+    width: 100px;
+}
+header #menu-nave{
+    flex: 1;
+
+}
+
+body{
+    margin: 20px 20px 0px 20px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+h1{
+    font-size: 2em;
+}
+
+footer{
+    margin-bottom: 0em;
+}
+/*fonts*/
+
+/*mobile styles*/
+
+/*small tablet styles*/
+@media screen and (min-width: 620px){
+
+}
+
+/*large tables & laptop styles*/
+@media screen and (min-width: 960px){
+
+}
+
+/*desktop styles*/
+@media screen and (min-width:1200px){
+    h1{
+        font-size: 10em;
+
+}
+
+/* grid testing */
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.welcome h1,p {
+    text-align: left;
+    margin: 0;
+
+}
+
