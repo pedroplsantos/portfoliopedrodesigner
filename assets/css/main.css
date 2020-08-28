@@ -1,7 +1,12 @@
 /*variables*/
 
 /* reset*/
-body,p,a,ul,li{
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}  
+
+body,p,a,ul,li, h3{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -11,47 +16,119 @@ li{
     list-style-type: none;
 }
 
-*{
-    font-family: 'Montserrat', sans-serif;
-}  
-
 /*base styles*/
-
-header{
-    min-width: 20px;
-}
-
-header #logo{
-    width: 100px;
-}
-header #menu-nave{
-    flex: 1;
-
-}
-
 body{
-    margin: 20px 20px 0px 20px;
-}
-section{
-    display: grid;
-    grid-template-columns: 1fr ;
+    padding: 20px 20px 0px 20px;
 }
 
-h1{
-    font-size: 2em;
-}
-
-footer{
-    margin-bottom: 0em;
-}
 /*fonts*/
 
-/*mobile styles*/
 
-/*small tablet styles*/
-@media screen and (min-width: 620px){
+
+/*mobile styles*/
+header{
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    
+}
+
+    .logo{
+        height: 100px;
+        padding: 20px 0px;
+        
+    }
+
+    .menu-nav{
+        flex: 1;
+        align-items: center;
+        
+    }
+
+        .menu-nav ul{
+            background-color: darkmagenta;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: .8em;
+        }
+
+            .menu-nav li{
+                min-width: 50px;
+            }
+
+
+.grid{
+    background-color: darkslategray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: lavender;
+    padding: 20px 0px;
+    
+}
+
+    #welcome{
+        font-size: 3em;
+        grid-column: 1 / 2;
+    }
+
+    #myself p{
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+
+
+
+footer{
+    background-color: darkorange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
 
 }
+        footer p{
+        grid-column:1/4;
+        grid-row: 3;
+        height: 10px;
+        place-self: center;
+    }
+
+
+    .footer-logo{
+        height: 80px;
+        padding: 20px 0px;
+        grid-row: 2;
+        align-items: center stretch;
+    }
+
+
+    .menu-footer{
+        grid-row: 2;
+        font-size: .9em;
+       
+    }
+
+    .footer-contact{
+        grid-column: 3;
+        grid-row: 2;
+        font-size: .9em;
+        
+    }
+        .footer-contact p {
+            padding: .8em 0em;
+            font-size: .8em;
+            font-style: Light;
+        }
+
+    /*small tablet styles*/
+    @media screen and (min-width: 620px){
+
+    }
 
 /*large tables & laptop styles*/
 @media screen and (min-width: 960px){
@@ -60,22 +137,8 @@ footer{
 
 /*desktop styles*/
 @media screen and (min-width:1200px){
-    h1{
-        font-size: 10em;
-
-}
-
-/* grid testing */
-
-.welcome {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     
 }
 
-.welcome h1,p {
-    text-align: left;
-    margin: 0;
-
-}
+/* grid testing */
 
